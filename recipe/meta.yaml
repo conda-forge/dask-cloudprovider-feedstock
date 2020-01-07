@@ -1,5 +1,5 @@
 {% set name = "dask-cloudprovider" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dask/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 593d175290069b0258b9da147818ec25fe58a731919ee52a47b6a93ed2c12cbf
+  sha256: dff9836710901a1917efdc7e8a8412ff81e4d795c67371832a54f6f3fee53ccb
 
 build:
   noarch: python
