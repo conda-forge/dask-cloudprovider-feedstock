@@ -1,5 +1,5 @@
 {% set name = "dask-cloudprovider" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/dask/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: dff9836710901a1917efdc7e8a8412ff81e4d795c67371832a54f6f3fee53ccb
+  sha256: 4b0b0ec181955dd71d8c471e8b5ca9ecd94653e043db1fee070bf183870af69d
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - dask-ecs=dask_cloudprovider.cli.ecs:go
 
@@ -37,7 +37,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Cloud provider cluster managers for Dask distributed'
+  summary: Cloud provider cluster managers for Dask distributed
   description: |
     Native Cloud integration for Dask. This library intends to allow people to create dask clusters on a
     given cloud provider with no set up other than having credentials.
