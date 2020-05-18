@@ -10,8 +10,8 @@ source:
   sha256: 4b0b0ec181955dd71d8c471e8b5ca9ecd94653e043db1fee070bf183870af69d
 
 build:
-  noarch: python
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - dask-ecs=dask_cloudprovider.cli.ecs:go
@@ -22,15 +22,18 @@ requirements:
     - pip
   run:
     - python >=3.5
-    - aiobotocore
-    - dask
-    - distributed
+    - aiobotocore >=0.10.2
+    - dask >=2.2.0
+    - distributed >=2.3.1
 
 test:
   imports:
     - dask_cloudprovider
   commands:
+    - pip check
     - dask-ecs --help
+  requires:
+    - pip
 
 about:
   home: https://cloudprovider.dask.org/
