@@ -5,7 +5,7 @@ Home: https://cloudprovider.dask.org/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Cloud provider cluster managers for Dask distributed
 
