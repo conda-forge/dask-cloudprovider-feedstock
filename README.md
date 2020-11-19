@@ -5,9 +5,13 @@ Home: https://cloudprovider.dask.org/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dask-cloudprovider-feedstock/blob/master/LICENSE.txt)
 
 Summary: Cloud provider cluster managers for Dask distributed
+
+Development: https://github.com/dask/dask-cloudprovider
+
+Documentation: https://cloudprovider.dask.org/
 
 Native Cloud integration for Dask. This library intends to allow people to create dask clusters on a
 given cloud provider with no set up other than having credentials.
