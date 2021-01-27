@@ -1,5 +1,5 @@
 {% set name = "dask-cloudprovider" %}
-{% set version = "0.5.1" %}
+{% set version = "2021.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dask-cloudprovider/dask-cloudprovider-{{ version }}.tar.gz
-  sha256: 6b30079b800d53f536f68c532a7feacf65cc156d646885f5aff41687de5d5c8d
+  sha256: 0c544bffc6986972a6a824eb8d14f85c1522881f6320ac4fcdfa2caa297e22e9
 
 build:
   number: 0
