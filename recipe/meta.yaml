@@ -10,7 +10,7 @@ source:
   sha256: e6ea15098625daaf662350e69517cb2d9f9ec22f56217bd6cd3342989bfc88c2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -18,13 +18,18 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - pip
   run:
-    - python >=3.5
+    - python >=3.7
     - aiobotocore >=0.10.2
+    - azure-cli-core >=2.15.1
+    - azure-mgmt-compute >=18.0.0
+    - azure-mgmt-network >=16.0.0
     - dask >=2.2.0
     - distributed >=2.3.1
+    - google-api-python-client >=1.12.5
+    - google-auth >=1.23.0
 
 test:
   imports:
